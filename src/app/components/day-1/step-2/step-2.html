@@ -1,0 +1,16 @@
+<div style="padding: 20px; border: 2px dashed #666; font-family: monospace;">
+  <h3>🅰️ Экспериментальный стенд: Шаг 2</h3>
+
+  <!-- Данные из класса рендерятся напрямую в текстовые ноды живого DOM -->
+  <p>Обычный счётчик (не Сигнал): <strong>{{ counter }}</strong></p>
+  <p>Результат тяжёлого вычисления: <strong>{{ runHeavyCalculation() }}</strong></p>
+
+  <div style="margin-top: 15px;">
+    <button (click)="incrementCounter()">1. Мутировать counter напрямую</button>
+    <button (click)="forceTriggerDetection()" style="margin-left: 10px;">2. Триггернуть проверку</button>
+  </div>
+
+  <p style="color: #666; font-size: 12px; margin-top: 15px;">
+    *🔬 Откройте Console в DevTools, чтобы увидеть рантайм-логи.
+  </p>
+</div>
