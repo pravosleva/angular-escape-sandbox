@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+
+h3, h4, p {
+  margin: 0;
+}
+
+.stack1 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.stack2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.row2 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Общие стили для моноширинных стендов шагов */
+.lab-sandbox {
+  padding: 20px;
+  border: 2px dashed #444;
+  font-family: monospace;
+  border-radius: 16px;
+  background-color: #fafafa;
+}
+
+/* Темная тема пульта (как в шаге 3) */
+.lab-sandbox.dark {
+  background-color: #1a1a1a;
+  color: #fff;
+  border-color: #666;
+}
+
+/* Панели мониторинга (computed/signals) */
+.lab-monitor {
+  background: #222;
+  color: #0f0;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+/* Общие кнопки пульта */
+.btn {
+  padding: 6px 12px;
+  font-family: monospace;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: #eee;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Инпуты */
+.input {
+  width: 70px;
+  padding: 4px;
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+  font-family: monospace;
+  border-radius: 4px;
+}

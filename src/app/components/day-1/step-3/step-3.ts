@@ -10,16 +10,16 @@ interface ProcessItem {
   standalone: true,
   imports: [], // Встроенный Control Flow (@if, @for) не требует импорта сторонних директив!
   template: `
-    <div style="padding: 20px; border: 2px dashed #666; font-family: monospace; margin-top: 20px;">
+    <div class="lab-sandbox dark stack1">
       <h3>🅰️ Экспериментальный стенд: Шаг 3 (Control Flow)</h3>
 
-      <div style="margin-bottom: 15px;">
-        <button (click)="toggleLoader()">Переключить лоадер</button>
-        <button (click)="addProcess()" style="margin-left: 10px;">Добавить процесс</button>
-        <button (click)="clearProcesses()" style="margin-left: 10px;">Очистить все</button>
+      <div class="row1">
+        <button (click)="toggleLoader()" class="btn">Переключить лоадер</button>
+        <button (click)="addProcess()" class="btn">Добавить процесс</button>
+        <button (click)="clearProcesses()" class="btn">Очистить все</button>
       </div>
 
-      <div style="background: #222; color: #0f0; padding: 15px; border-radius: 4px;">
+      <div class="lab-monitor">
         <!-- 1. Ветвление через @if / @else -->
         @if (isLoading()) {
           <div class="spinner">⏳ [Рантайм]: Сканирование графа зависимостей...</div>

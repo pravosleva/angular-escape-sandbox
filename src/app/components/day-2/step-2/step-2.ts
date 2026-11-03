@@ -6,7 +6,7 @@ import { Component, signal, computed, input, output } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <div style="padding: 15px; border: 1px solid #00bc8c; background: #1a1a1a; margin-top: 15px; border-radius: 4px;">
+    <div class="lab-monitor">
       <h4>👶 Дочерний компонент (Day2Step2Child)</h4>
 
       <!-- Потребляем сигнальные пропсы как функции -->
@@ -16,7 +16,7 @@ import { Component, signal, computed, input, output } from '@angular/core';
       <!-- Потребляем вычисляемый узел графа -->
       <p>Производная метрика (Computed): <span>{{ derivedMetric() }}</span></p>
 
-      <button (click)="sendPing()">Отправить пинг родителю</button>
+      <button (click)="sendPing()" class="btn">Отправить пинг родителю</button>
     </div>
   `,
   styles: ``
@@ -54,12 +54,12 @@ export class Day2Step2Child {
   // КРИТИЧЕСКИ ВАЖНО: Явно импортируем класс ребенка, так как мы в standalone-режиме
   imports: [Day2Step2Child],
   template: `
-    <div style="padding: 20px; border: 2px dashed #444; font-family: monospace; margin-top: 20px;">
+    <div class="lab-sandbox dark stack1">
       <h3>🅰️ День 2: Шаг 2 — Сигнальные инпуты и События</h3>
 
-      <div style="margin-bottom: 15px;">
-        <button (click)="changeCoreName()">1. Изменить coreName родителя</button>
-        <button (click)="changeFrequency()" style="margin-left: 10px;">2. Изменить frequency родителя</button>
+      <div class="row1">
+        <button (click)="changeCoreName()" class="btn">1. Изменить coreName родителя</button>
+        <button (click)="changeFrequency()" class="btn">2. Изменить frequency родителя</button>
       </div>
 
       <p>Лог событий от ребенка: <span style="color: #aaa;">{{ lastChildLog() }}</span></p>

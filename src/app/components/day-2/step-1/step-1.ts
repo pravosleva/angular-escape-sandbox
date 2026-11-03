@@ -5,10 +5,10 @@ import { Component, signal, computed, effect } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <div style="padding: 20px; border: 2px dashed #444; font-family: monospace; margin-top: 20px;">
+    <div class="lab-sandbox dark stack1">
       <h3>🅰️ День 2: Шаг 1 — Сигналы и Эффекты</h3>
 
-      <div style="background: #222; color: #0f0; padding: 15px; border-radius: 4px; margin-bottom: 15px;">
+      <div class="lab-monitor">
         <p>Поток А (Signal): <strong>{{ streamA() }}</strong></p>
         <p>Поток B (Signal): <strong>{{ streamB() }}</strong></p>
         <hr style="border-color: #444;" />
@@ -16,13 +16,13 @@ import { Component, signal, computed, effect } from '@angular/core';
         <p>Сумма потоков (Computed): <strong style="color: #00bc8c;">{{ sum() }}</strong></p>
       </div>
 
-      <div>
-        <button (click)="incrementA()">Увеличить Поток А</button>
-        <button (click)="incrementB()" style="margin-left: 10px;">Увеличить Поток B</button>
-        <button (click)="triggerUnrelatedChange()" style="margin-left: 10px;">Мутировать холостой сигнал</button>
+      <div class="row1">
+        <button (click)="incrementA()" class="btn">Увеличить Поток А</button>
+        <button (click)="incrementB()" class="btn">Увеличить Поток B</button>
+        <button (click)="triggerUnrelatedChange()" class="btn">Мутировать холостой сигнал</button>
       </div>
 
-      <p style="color: #888; font-size: 12px; margin-top: 15px;">
+      <p style="color: #888;">
         *🔬 Логи синхронизации графа реактивности выводятся в Console DevTools.
       </p>
     </div>

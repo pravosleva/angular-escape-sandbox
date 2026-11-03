@@ -10,27 +10,27 @@ interface ProcessItem {
   selector: 'exp-day-1-step-4',
   styles: ``,
   template: `
-    <div style="padding: 20px; border: 2px dashed #666; font-family: monospace; margin-top: 20px;">
+    <div class="lab-sandbox dark stack1">
       <h3>🅰️ Финальный стенд Шага 4: Итоговый эксперимент</h3>
 
       <!-- 1. Вызов тяжелой функции напрямую в шаблоне -->
-      <div style="background: #333; padding: 10px; margin-bottom: 15px; border-radius: 4px;">
+      <div class="lab-monitor">
         ⚙️ Тяжёлое вычисление в шаблоне:
         <strong style="color: #ff3333;">{{ runHeavyCalculation() }}</strong>
       </div>
 
       <!-- 2. Вызов оптимизированного computed-сигнала (аналог useMemo) -->
-      <div style="background: #222; padding: 10px; margin-bottom: 15px; border-radius: 4px;">
+      <div class="lab-monitor">
         🧠 Оптимизированный computed() граф (useMemo-way):
-        <strong style="color: #0f0;">{{ optimizedValue() }}</strong>
+        <strong>{{ optimizedValue() }}</strong>
       </div>
 
-      <div style="margin-bottom: 15px;">
-        <button (click)="toggleLoader()">1. Переключить лоадер (Триггер Сигнала)</button>
-        <button (click)="addProcess()">2. Добавить процесс (Изменение списка)</button>
+      <div class="row1">
+        <button (click)="toggleLoader()" class="btn">1. Переключить лоадер (Триггер Сигнала)</button>
+        <button (click)="addProcess()" class="btn">2. Добавить процесс (Изменение списка)</button>
       </div>
 
-      <div style="background: #111; color: #0f0; padding: 15px; border-radius: 4px;">
+      <div class="lab-monitor">
         @if (isLoading()) {
           <div>⏳ Сканирование рантайма...</div>
         } @else {
