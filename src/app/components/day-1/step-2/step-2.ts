@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './step-2.css',
   templateUrl: './step-2.html',
 })
-export class Step2 {
+export class Day1Step2 {
   // Локальный стейт компонента (обычное свойство класса)
   counter = 0;
 

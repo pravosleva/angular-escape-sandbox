@@ -48,7 +48,7 @@ interface ProcessItem {
   `,
 })
 
-export class Step4 {
+export class Day1Step4 {
   // Источники правды (Producers)
   isLoading = signal(false);
   processes = signal<ProcessItem[]>([

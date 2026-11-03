@@ -45,7 +45,7 @@ interface ProcessItem {
     </div>
   `,
 })
-export class Step3 {
+export class Day1Step3 {
   // Инициализируем реактивные атомы данных (Сигналы)
   isLoading = signal(false);
   processes = signal<ProcessItem[]>([

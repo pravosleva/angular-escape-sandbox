@@ -1,11 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Step2 } from './components/day-1/step-2/step-2';
-import { Step3 } from './components/day-1/step-3/step-3';
-import { Step4 } from './components/day-1/step-4/step-4';
+import { Day1Step2 } from './components/day-1/step-2/step-2';
+import { Day1Step3 } from './components/day-1/step-3/step-3';
+import { Day1Step4 } from './components/day-1/step-4/step-4';
+import { Day2Step1 } from './components/day-2/step-1/step-1';
 
 @Component({
-  imports: [RouterOutlet, Step2, Step3, Step4],
+  imports: [RouterOutlet, Day1Step2, Day1Step3, Day1Step4, Day2Step1],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
