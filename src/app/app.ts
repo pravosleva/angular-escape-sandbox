@@ -8,7 +8,7 @@ import { Day2Step2 } from './components/day-2/step-2/step-2';
 import { Day2Step3 } from './components/day-2/step-3/step-3';
 import { Day3Step1 } from './components/day-3/step-1/step-1';
 import { Day3Step2 } from './components/day-3/step-2/step-2';
-import { Day3Step3 } from './components/day-3/step-3/step-3';
+import { Day3Step3 } from './components/day-3/step-3/step-3.v3';
 
 @Component({
   imports: [
