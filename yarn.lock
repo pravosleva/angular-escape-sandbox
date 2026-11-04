@@ -1118,6 +1118,11 @@
     "@parcel/watcher-win32-arm64" "2.6.0"
     "@parcel/watcher-win32-x64" "2.6.0"
 
+"@pravosleva/reactive-engine@^2.6.3":
+  version "2.6.3"
+  resolved "https://registry.yarnpkg.com/@pravosleva/reactive-engine/-/reactive-engine-2.6.3.tgz#47aca3a98570ea2f93ddfa7123eb33e6069241ed"
+  integrity sha512-8WWoYtcDThIB3JiDxFaE2pIi1tX/tSvksARBOrEeUgxDmTp2QslxcRmS30NPaI7y4OGFMMM+6jeuBHw8pTiyvw==
+
 "@rolldown/binding-android-arm-eabi@1.2.15":
   version "1.2.15"
   resolved "https://registry.yarnpkg.com/@rolldown/binding-android-arm-eabi/-/binding-android-arm-eabi-1.2.15.tgz#3bdaa2e77aabbb78194500e22d46ebbdfc009558"
