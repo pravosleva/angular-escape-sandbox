@@ -10,6 +10,11 @@ import { ReactiveEngine as ReactiveEngine4Angular } from '@pravosleva/reactive-e
  */
 @Injectable()
 export class ExternalEngineStore extends AbstractService {
+  // В сообщении об ошибке компилятор сам даёт подсказку:
+  // «or add an explicit constructor to ExternalEngineStore».
+  // Нам нужно явно переопределить конструктор в нашем классе и прокинуть инстанс движка через super() самостоятельно, забрав его у DI-контейнера.
+  constructor() { super(angularInject(ReactiveEngine4Angular)); }
+
   // Инициализируем реактивные ноды ядра через встроенное свойство this.engine
   private readonly _isExternalEngineOnline = this.engine.signal<boolean>(true, 'external-engine:online');
   private readonly _externalSubRoutinesCount = this.engine.signal<number>(3, 'external-engine:routines');
