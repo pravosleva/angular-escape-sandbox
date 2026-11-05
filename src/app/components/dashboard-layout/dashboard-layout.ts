@@ -1,10 +1,11 @@
 import { Component, input } from '@angular/core';
 import { Day4Step1 } from '../day-4/step-1/step-1.v2';
+import { Day4Step2 } from '../day-4/step-2/step-2';
 
 @Component({
   selector: 'app-dashboard-layout',
   standalone: true,
-  imports: [Day4Step1],
+  imports: [Day4Step1, Day4Step2],
   template: `
     <div class="sandbox-root">
       <h1>Day 4</h1>
@@ -14,6 +15,7 @@ import { Day4Step1 } from '../day-4/step-1/step-1.v2';
         <!-- <exp-day-4-step-1 [id]="id()" [search]="search()" /> -->
         <!-- (v2) -->
         <exp-day-4-step-1 />
+        <exp-day-4-step-2 />
       </div>
     </div>
   `
