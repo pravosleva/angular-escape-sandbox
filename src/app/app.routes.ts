@@ -38,4 +38,13 @@ export const appRoutes: Routes = [
       initialNotes: notesResolver
     }
   },
+  {
+    path: 'day-4/step-4',
+    // Загружаем всю пачку дочерних путей, сохраняя ленивые чанки для Day4Step4 и ребенка
+    loadChildren: () => import('./components/day-4/step-4/step-4').then(m => m.STEP_4_ROUTES),
+    canActivate: [authGuard],
+    resolve: {
+      initialNotes: notesResolver
+    }
+  },
 ];
